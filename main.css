@@ -1,0 +1,40 @@
+* {
+  overflow-x: hidden;
+}
+html {
+  font-size: 16px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+  background-color: antiquewhite;
+}
+li {
+  list-style: none;
+}
+.header {
+  width: 100vw;
+  height: 5rem;
+  font-size: 1.3rem;
+}
+.nav-dad {
+  display: flex;
+  justify-content: baseline;
+  gap: 20rem;
+}
+.nav-main {
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+}
+.nav-side {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+.nav-link:link {
+  text-decoration: none;
+}
