@@ -6,24 +6,28 @@ html {
 }
 html,
 body {
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
   scroll-behavior: smooth;
-  background-color: antiquewhite;
+  background-color: #ffe8cc;
 }
 li {
   list-style: none;
 }
 .header {
+  margin-top: 1rem;
   width: 100vw;
   height: 5rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  border-radius: 20px;
 }
 .nav-dad {
   display: flex;
-  justify-content: baseline;
-  gap: 20rem;
+  justify-content: center;
+  gap: 22rem;
+  position: fixed;
 }
 .nav-main {
   display: flex;
@@ -37,4 +41,32 @@ li {
 }
 .nav-link:link {
   text-decoration: none;
+}
+
+.slide-dad {
+  margin: auto;
+  height: 30rem;
+  width: 50rem;
+  overflow-y: hidden;
+}
+.slide1 {
+  height: 30rem;
+  width: 50rem;
+  background-color: red;
+}
+.slide2 {
+  margin: auto;
+  height: 30rem;
+  width: 50rem;
+  background-color: blue;
+}
+.slide3 {
+  margin: auto;
+  height: 30rem;
+  width: 50rem;
+  background-color: green;
+}
+
+.footer {
+  text-align: center;
 }
