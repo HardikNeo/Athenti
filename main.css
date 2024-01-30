@@ -1,9 +1,12 @@
 * {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
 html {
   font-size: 16px;
 }
+
 html,
 body {
   font-family: "Lato", sans-serif;
@@ -13,32 +16,47 @@ body {
   scroll-behavior: smooth;
   background-color: #ffe8cc;
 }
+
 li {
   list-style: none;
 }
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .header {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   width: 100vw;
-  height: 5rem;
+  height: 3rem;
   font-size: 1.1rem;
   border-radius: 20px;
 }
+
 .nav-dad {
   display: flex;
   justify-content: center;
   gap: 22rem;
   position: fixed;
+  padding-right: 1rem;
 }
+
 .nav-main {
   display: flex;
   justify-content: space-around;
   gap: 8rem;
 }
+
 .nav-side {
   display: flex;
   justify-content: space-around;
   gap: 5rem;
 }
+
 .nav-link:link {
   text-decoration: none;
 }
@@ -48,25 +66,32 @@ li {
   height: 30rem;
   width: 50rem;
   overflow-y: hidden;
+  animation: slides 9s infinite;
 }
-.slide1 {
-  height: 30rem;
-  width: 50rem;
-  background-color: red;
+.items-dad{
+  display: grid;
+  grid-template-columns:3;
+  grid-template-rows:3;  
+  gap: 1rem 1rem;  
 }
-.slide2 {
-  margin: auto;
-  height: 30rem;
-  width: 50rem;
-  background-color: blue;
-}
-.slide3 {
-  margin: auto;
-  height: 30rem;
-  width: 50rem;
-  background-color: green;
+
+.items {
+  height: 15rem;
+  width: 20rem;
+  background-color: #202020;
+  margin-bottom: 1rem
 }
 
 .footer {
   text-align: center;
+}
+
+@keyframes slides {
+  0%{background-color: red;}
+  30%{background-color: red;}
+  33%{background-color: yellow;}
+  63%{background-color: yellow;}
+  66%{background-color: green;}
+  97%{background-color: green;}
+  100%{background-color: red;}
 }
